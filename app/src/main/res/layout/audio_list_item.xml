@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/audioLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/list_play_btn" />
+
+    <TextView
+        android:id="@+id/auidoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="Filename"
+        android:textColor="@color/DarkBlue"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/audioLogo"
+        app:layout_constraintTop_toTopOf="@+id/audioLogo" />
+
+    <TextView
+        android:id="@+id/audioDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/open_sans"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/audioLogo"
+        app:layout_constraintStart_toEndOf="@+id/audioLogo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
